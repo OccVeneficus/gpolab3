@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{50815294-EC6D-41D5-9C5B-998178414F5C}</ProjectGuid>
-    <RootNamespace>ThirdLab</RootNamespace>
+    <ProjectGuid>{0995320B-EC71-4471-8C4A-FBCD566949F4}</ProjectGuid>
+    <RootNamespace>FourthLab</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,22 +115,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClassesOutput.cpp" />
     <ClCompile Include="DataInOut.cpp" />
+    <ClCompile Include="HashTable.cpp" />
+    <ClCompile Include="Chain.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menus.cpp" />
-    <ClCompile Include="RingBuffer.cpp" />
-    <ClCompile Include="RingBufferQueue.cpp" />
-    <ClCompile Include="Stack.cpp" />
-    <ClCompile Include="TwoStackQueue.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Vocabulary.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BufferNode.h" />
+    <ClInclude Include="ClassesOutput.h" />
     <ClInclude Include="DataInOut.h" />
+    <ClInclude Include="HashTable.h" />
+    <ClInclude Include="Chain.h" />
     <ClInclude Include="Menus.h" />
-    <ClInclude Include="RingBuffer.h" />
-    <ClInclude Include="RingBufferQueue.h" />
-    <ClInclude Include="Stack.h" />
-    <ClInclude Include="TwoStackQueue.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Vocabulary.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

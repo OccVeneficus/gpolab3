@@ -1,11 +1,8 @@
 #include "DynamicArray.h"
-#include <cstdlib>
-#include <ctime>
 
 int main()
 {
-	srand(time(NULL));
-	int index;
+	srand(time(nullptr));
 	DynamicArray arrayParameters;
 	CreatingArray(arrayParameters);
 	cout << "\n";
@@ -23,56 +20,59 @@ int main()
 		while (menuItem > 8 || menuItem <= 0);
 		switch (menuItem)
 		{
-		case 1:
+			case 1:
 			{
-			system("cls");
-			DeletingElement(arrayParameters);
-			break;
+				system("cls");
+				DeletingElement(arrayParameters);
+				break;
 			}
-		case 2:
+			case 2:
 			{
-			system("cls");
-			AddingAfterIndex(arrayParameters, 0);
-			break;
+				system("cls");
+				AddingAfterIndex(arrayParameters, 0);
+				break;
 			}
-		case 3:
+			case 3:
 			{
-			system("cls");
-			AddingAfterIndex(arrayParameters, arrayParameters.Length);
-			break;
+				system("cls");
+				AddingAfterIndex(arrayParameters, arrayParameters.Length);
+				break;
 			}
-		case 4:
+			case 4:
 			{
-			system("cls");
-			do
-			{
-				cout << "Enter index of element after witch";
-				cout << "you want to put new element: ";
-				index = ReadingValue() + 1;
-			} while (index < 0 || index >= arrayParameters.Length);
-			AddingAfterIndex(arrayParameters, index);
-			break;
+				int index;
+				system("cls");
+				do
+					{
+						cout << "Enter index of element after witch";
+						cout << "you want to put new element: ";
+						index = ReadingValue() + 1;
+					} 
+				while (index < 0 || index >= arrayParameters.Length);
+				AddingAfterIndex(arrayParameters, index);
+				break;
 			}
-		case 5:
+			case 5:
 			{
-			system("cls");
-			SortingArray(arrayParameters);
-			break;
+				system("cls");
+				SortingArray(arrayParameters);
+				break;
 			}
-		case 6:
+			case 6:
 			{
-			system("cls");
-			LinearSearching(arrayParameters);
-			break;
+				system("cls");
+				LinearSearching(arrayParameters);
+				break;
+			}
+			case 7:
+			{
+				system("cls");
+				BinarSearching(arrayParameters);
+				break;
+			}
 		}
-		case 7:
-			{
-			system("cls");
-			BinarSearching(arrayParameters);
-			break;
-			}
-		}
-	} while (menuItem != 8);
+	} 
+	while (menuItem != 8);
 	DeletingArray(arrayParameters.Array);
 	cout << "Ending session...";
 	return 0;

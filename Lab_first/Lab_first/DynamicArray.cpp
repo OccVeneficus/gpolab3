@@ -47,7 +47,8 @@ void DeletingElement(DynamicArray &arrayParameters)
 	{
 		cout << "Enter index of element you want to delete: ";
 		indexToDelete = ReadingValue();
-	} while (indexToDelete < 0 || indexToDelete >= arrayParameters.Length);
+	} 
+	while (indexToDelete < 0 || indexToDelete >= arrayParameters.Length);
 	for (int i = indexToDelete; i < arrayParameters.Length; i++)
 	{
 		arrayParameters.Array[i] = arrayParameters.Array[i + 1];

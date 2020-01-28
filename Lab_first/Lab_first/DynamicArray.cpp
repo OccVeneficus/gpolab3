@@ -74,6 +74,7 @@ void AddingAfterIndex(DynamicArray &arrayParameters, int index)
 	++arrayParameters.Length;
 }
 
+/*Bubble sort*/
 void SortingArray(DynamicArray &arrayParameters)
 {
 	for (int i = 1; i < arrayParameters.Length; i++)

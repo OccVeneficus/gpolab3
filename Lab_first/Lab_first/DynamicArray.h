@@ -5,6 +5,8 @@
 
 using namespace std;
 
+const int EXIT_MENU_ITEM = 8;
+
 struct DynamicArray
 {
 	int Length;

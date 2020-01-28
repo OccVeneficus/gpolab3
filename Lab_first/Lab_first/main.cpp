@@ -72,7 +72,7 @@ int main()
 			}
 		}
 	} 
-	while (menuItem != 8);
+	while (menuItem != EXIT_MENU_ITEM);
 	DeletingArray(arrayParameters.Array);
 	cout << "Ending session...";
 	return 0;

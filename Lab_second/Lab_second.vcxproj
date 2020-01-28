@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{16910A3B-3109-4FE7-A522-2221E61E0DA3}</ProjectGuid>
-    <RootNamespace>Labfirst</RootNamespace>
+    <ProjectGuid>{64203B1C-CF91-4485-BCF0-E24690750143}</ProjectGuid>
+    <RootNamespace>Labsecond</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,11 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DynamicArray.cpp" />
+    <ClCompile Include="DataInputOutput.cpp" />
+    <ClCompile Include="LinkedLists.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DynamicArray.h" />
+    <ClInclude Include="DataInputOutput.h" />
+    <ClInclude Include="LinkedLists.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

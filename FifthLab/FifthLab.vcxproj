@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0995320B-EC71-4471-8C4A-FBCD566949F4}</ProjectGuid>
-    <RootNamespace>FourthLab</RootNamespace>
+    <ProjectGuid>{FD3B30BB-B12F-43AD-9A0B-0EEBE2BF73A2}</ProjectGuid>
+    <RootNamespace>FifthLab</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,23 +115,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ClassesOutput.cpp" />
+    <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="DataInOut.cpp" />
-    <ClCompile Include="HashTable.cpp" />
-    <ClCompile Include="Chain.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menus.cpp" />
     <ClCompile Include="Node.cpp" />
-    <ClCompile Include="Vocabulary.cpp" />
+    <ClCompile Include="Treap.cpp" />
+    <ClCompile Include="TreapNode.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassesOutput.h" />
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="DataInOut.h" />
-    <ClInclude Include="HashTable.h" />
-    <ClInclude Include="Chain.h" />
     <ClInclude Include="Menus.h" />
     <ClInclude Include="Node.h" />
-    <ClInclude Include="Vocabulary.h" />
+    <ClInclude Include="Treap.h" />
+    <ClInclude Include="TreapNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

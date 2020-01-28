@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{64203B1C-CF91-4485-BCF0-E24690750143}</ProjectGuid>
-    <RootNamespace>Labsecond</RootNamespace>
+    <ProjectGuid>{50815294-EC6D-41D5-9C5B-998178414F5C}</ProjectGuid>
+    <RootNamespace>ThirdLab</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,13 +115,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DataInputOutput.cpp" />
-    <ClCompile Include="LinkedLists.cpp" />
+    <ClCompile Include="DataInOut.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menus.cpp" />
+    <ClCompile Include="RingBuffer.cpp" />
+    <ClCompile Include="RingBufferQueue.cpp" />
+    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="TwoStackQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DataInputOutput.h" />
-    <ClInclude Include="LinkedLists.h" />
+    <ClInclude Include="BufferNode.h" />
+    <ClInclude Include="DataInOut.h" />
+    <ClInclude Include="Menus.h" />
+    <ClInclude Include="RingBuffer.h" />
+    <ClInclude Include="RingBufferQueue.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="TwoStackQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

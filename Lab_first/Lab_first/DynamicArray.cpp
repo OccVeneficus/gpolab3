@@ -63,8 +63,7 @@ void AddingAfterIndex(DynamicArray &arrayParameters, int index)
 	{
 		RecreatingArray(arrayParameters);
 	}
-	cout << "\n";
-	cout << "Enter value you want to add to array: ";
+	cout << "\nEnter value you want to add to array: ";
 	int value = ReadingValue();
 	for (int i = arrayParameters.Length - 1; i >= index; i--)
 	{
@@ -85,15 +84,13 @@ void SortingArray(DynamicArray &arrayParameters)
 			swap(arrayParameters.Array[j - 1], arrayParameters.Array[j]);
 		}
 	}
-	cout << "\n";
-	cout << "Sorted array\n";
+	cout << "\nSorted array\n";
 }
 
 void LinearSearching(DynamicArray &arrayParameters)
 {
 	PrintingArray(arrayParameters);
-	cout << "\n";
-	cout << "Enter value you want to find: ";
+	cout << "\nEnter value you want to find: ";
 	int valueToSearch = ReadingValue();
 	int index = -1;
 	for (int i = 0; i < arrayParameters.Length; i++)
@@ -105,8 +102,7 @@ void LinearSearching(DynamicArray &arrayParameters)
 	}
 	if (index != -1)
 	{
-		cout << "\n";
-		cout << "There is at least 1 element ";
+		cout << "\nThere is at least 1 element ";
 		cout << valueToSearch;
 		cout << " in array. Index: ";
 		cout << index;
@@ -114,8 +110,7 @@ void LinearSearching(DynamicArray &arrayParameters)
 	}
 	else
 	{
-		cout << "\n";
-		cout << "There is no ";
+		cout << "\There is no ";
 		cout << valueToSearch;
 		cout << " in current Array.";
 		cout << "\n";
@@ -126,8 +121,7 @@ void BinarSearching(DynamicArray &arrayParameters)
 {
 	SortingArray(arrayParameters);
 	PrintingArray(arrayParameters);
-	cout << "\n";
-	cout << "What value you want to find: ";
+	cout << "\nWhat value you want to find: ";
 	int valueToSearch = ReadingValue();
 	int leftEnd = 0;
 	int rightEnd = arrayParameters.Length;
@@ -152,8 +146,7 @@ void BinarSearching(DynamicArray &arrayParameters)
 	}
 	if (flag)
 	{
-		cout << "\n";
-		cout << "There is at least 1 element ";
+		cout << "\nThere is at least 1 element ";
 		cout << valueToSearch;
 		cout << " in array. Index: ";
 		cout<< middleOfArray;
@@ -161,8 +154,7 @@ void BinarSearching(DynamicArray &arrayParameters)
 	}
 	else
 	{
-		cout << "\n";
-		cout << "There is no ";
+		cout << "\nThere is no ";
 		cout << valueToSearch;
 		cout << " in current Array.";
 		cout << "\n";

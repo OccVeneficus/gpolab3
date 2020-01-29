@@ -18,30 +18,27 @@ int main()
 			menuItem = ReadingValue();
 		} 
 		while (menuItem > 8 || menuItem <= 0);
+		system("cls");
 		switch (menuItem)
 		{
 			case 1:
 			{
-				system("cls");
 				DeletingElement(arrayParameters);
 				break;
 			}
 			case 2:
 			{
-				system("cls");
 				AddingAfterIndex(arrayParameters, 0);
 				break;
 			}
 			case 3:
 			{
-				system("cls");
 				AddingAfterIndex(arrayParameters, arrayParameters.Length);
 				break;
 			}
 			case 4:
 			{
 				int index;
-				system("cls");
 				do
 					{
 						cout << "Enter index of element after witch";
@@ -54,19 +51,16 @@ int main()
 			}
 			case 5:
 			{
-				system("cls");
 				SortingArray(arrayParameters);
 				break;
 			}
 			case 6:
 			{
-				system("cls");
 				LinearSearching(arrayParameters);
 				break;
 			}
 			case 7:
 			{
-				system("cls");
 				BinarSearching(arrayParameters);
 				break;
 			}

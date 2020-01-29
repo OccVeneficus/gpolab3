@@ -3,7 +3,12 @@
 #include <cstdlib>
 #include <ctime>
 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::swap;
+using std::numeric_limits;
+using std::streamsize;
 
 const int EXIT_MENU_ITEM = 8;
 

@@ -110,7 +110,7 @@ void LinearSearching(DynamicArray &arrayParameters)
 	}
 	else
 	{
-		cout << "\There is no ";
+		cout << "\nThere is no ";
 		cout << valueToSearch;
 		cout << " in current Array.";
 		cout << "\n";
